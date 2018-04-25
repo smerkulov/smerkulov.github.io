@@ -1,202 +1,210 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test page</title>
-	<style type="text/css">
-		h1{color: red;}
-		h2{color: orange;}
-		h3{color: yellow;}
-		h4{color: green;}
-		h5{color: blue;}
-		h6{color: violet;}
-		p{color: green;
-		  background-color: yellow;}
-		table{border: 10px dashed white;}
-		td{border: 7px solid red;}
+	<title>MyHTMLCSSHomework</title>
+	<meta charset="utf-8"></meta>
+ 	<style type="text/css">
+		#Parent{
+			display: flex;
+		}
+		div.main{
+			margin: 10px auto;
+			width: 70%;
+			border: 3px solid grey;
+		}
+		div.top{
+			padding-top: 10px;
+			background: radial-gradient(lightgreen, limegreen);
+			text-align: center;
+			height: 100%;
+		}
+		div.bigright{
+			background-color: lightyellow; 
+			width: 70%
+		}
+		div.right{
+			background-color: lightyellow; 
+			border-bottom: 3px solid royalblue;
+			margin-left: 10px;
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: normal;
+		}
+		div.bigleft{
+			background: linear-gradient(to right, blue, deepskyblue); 
+			width: 30%;
+			text-align: center;
+			align-items: center;
+			color: white;
+		}
+		div.img{
+			font-family: Arial;
+			padding-top: 20px;
+			color: white
+			font-size: 16px;
+			border-bottom: 3px yellow solid;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		div.question{
+			border: 3px solid black;
+			margin: 10px auto;
+			padding-bottom: 14px;
+			width: 70%;
+			background-color: goldenrod; 
+			text-align: center;
+			font-weight: bold;
+			font-family: Arial;
+			color: white
+			font-size: 16px;
+		}
+		td{
+    		background-color: red
+		}
+		tr{
+
+		}
+		ul{
+			text-align: left;
+		}
+		li{
+			color: white;
+		}
+		#love{
+			text-align: left;
+			margin: 10px;
+			font-size: 14px;
+			border-radius: 10px;
+		}
+		#img{
+			height: 200px;
+			width: 150px;
+			border-radius: 20px;
+			border: 3px solid white;
+		}
+		p.main{
+			font-family: Arial;
+			font-size: 20px;
+			font-weight: bold;
+			color: royalblue;
+		}
+		p.headright{
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		p.headleft{
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		#l1{
+			font-family: Arial;
+			text-align: center;
+			background-color: salmon;
+			border-radius: 10px;
+			padding-left: 10px;
+			width: 100px;
+		}
+		#l2{
+			font-family: Arial;
+			text-align: center;
+			background-color: mediumpurple;
+			border-radius: 10px;
+			padding-left: 10px;
+			width: 150px;
+		}
+		#l3{
+			font-family: Arial;
+			text-align: center;
+			background-color: limegreen;
+			border-radius: 10px;
+			padding-left: 10px;
+			width: 220px;
+		}
+		A {
+			color: yellow;
+		}
+		A: visited {
+			color: red;
+		}
 	</style>
 </head>
 <body>
-	<div style="color: green;">First raw
-	 	<div style="background-color: yellow;">Second raw
-	 		<div style="color: red;">Third row</div>
-	 	</div>
+	<div class="main">
+		<div class="top">
+			<p class="main">Curriculum vitae</p>
+		</div>
+		<div>
+			<div id="Parent" style="height: 600px">
+				<div class="bigleft">
+					<div class="img">
+						<img src="foto.jpeg" alt="Фото как на паспорт" id="img";>
+						<p>Сергей</p>
+						<p>Меркулов</p>
+					</div>
+					<div>
+						<p class="headleft">Люблю:</p>
+						<div id="love">
+							<div>
+								<p id="l1">Спорт</p>
+							</div>
+							<div>
+								<p id="l2">ИТ</p>
+							</div>
+							<div>
+								<p id="l3">Работать не 24 часа в сутки, а головой</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p class="headleft">Контакты</p>
+						<ul>
+							<li><a href="https://accounts.google.com/">Gmail</a></li>
+							<li><a href="https://www.ukr.net/">UkrNet</a></li>
+							<li><a href="https://www.facebook.com/">Facebook</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bigright">
+					<div class="right">
+						<p class="headright">Дата рождения:</p>
+						<p>20 февраля 1991 года</p>
+						<p class="headright">Желаемая страна проживания:</p>
+						<p>Исландия</p>
+					</div>
+					<div class="right">
+						<p class="headright">Знания и умения:</p>
+						<p>- Теория тестирования ПО;</p>
+						<p>- SQL;</p>
+						<p>- UNIX;</p>
+						<p>- HTML/CSS;</p>
+						<p>- JIRA;</p>
+						<p>- GIT.</p>
+						</pre>
+					</div>
+					<div class="right">
+						<p class="headright">Обо мне</p>
+						<p>- не курю;</p>
+						<p>- иногда пью;</p>
+						<p>- хочу работать тестировщиком ПО.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<p><h1>Строчка первого параграфа</h1></p>
-	<p> <h2>Строчка второго параграфа</h2></p>
-	<p>  <h3>Строчка третьего параграфа</h3></p>
-	<p>   <h4>Строчка четвертого параграфа</h4></p>
-	<p>    <h5>Строчка пятого параграфа</h5></p>
-	<p style="background-color: brown">     Строчка шестого параграфа</p>
-	<pre> Ydf sds
-		sds           ssfff
-	sdsdsdds                 sdsdsssdsdsd
-sddsdsd                          s  sdssssssssssssss sd</pre>
-	<p>Это <strike>отличный</strike> неплохой параграф</p>
-	<p><h1>H<sub>2</sub>O</h1></p>
-	<p>Это <small>отличный</small> <tt>неплохой</tt> параграф</p>
-	<hr size="5"; color="red">
-		<p> Здесь будет очень много одинакового текста<br />
-			Здесь будет очень много одинакового текста<br />
-			Здесь будет очень много одинакового текста<br />
-			Здесь будет очень много одинакового текста<br />
-			Здесь будет очень много одинакового текста<br />
-			Здесь будет очень много одинакового текста<br />
-		</p>
-	<hr>	
-
-
-	<ol>
-		<li>Первый по списку</li>
-		<li>Второй по списку</li>
-		<li>Третий по списку</li>
-		<li>Четвертый по списку</li>
-		<li><h6>Пятый по списку</h6></li>
-	</ol>
-
-	<ul>
-		<li>Первый по списку</li>
-		<li>Второй по списку</li>
-		<li>Третий по списку</li>
-		<li>Четвертый по списку</li>
-		<li>Пятый по списку</li>
-	</ul>
-
-	<table style="color: white; background-color: black;">
-		<tr>
-			<td><b>1</b></td>
-			<td>11</td>
-			<td>21</td>
-			<td>31</td>
-			<td>41</td>
-			<td>51</td>
-			<td>61</td>
-			<td>71</td>
-			<td>81</td>
-			<td>91</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td><b>12</b></td>
-			<td>22</td>
-			<td>32</td>
-			<td>42</td>
-			<td>52</td>
-			<td>62</td>
-			<td>72</td>
-			<td>82</td>
-			<td>92</td>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>13</td>
-			<td><b>23</b></td>
-			<td>33</td>
-			<td>34</td>
-			<td>35</td>
-			<td>36</td>
-			<td>37</td>
-			<td>38</td>
-			<td>39</td>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>14</td>
-			<td>24</td>
-			<td><b>34</b></td>
-			<td>44</td>
-			<td>54</td>
-			<td>64</td>
-			<td>74</td>
-			<td>84</td>
-			<td>94</td>
-		</tr>
-		<tr>
-			<td>5</td>
-			<td>15</td>
-			<td>25</td>
-			<td>35</td>
-			<td><b>45</b></td>
-			<td>55</td>
-			<td>65</td>
-			<td>75</td>
-			<td>85</td>
-			<td>95</td>
-		</tr>
-		<tr>
-			<td>6</td>
-			<td>16</td>
-			<td>26</td>
-			<td>36</td>
-			<td>46</td>
-			<td><b>56</b></td>
-			<td>66</td>
-			<td>76</td>
-			<td>86</td>
-			<td>96</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>17</td>
-			<td>27</td>
-			<td>37</td>
-			<td>47</td>
-			<td>57</td>
-			<td><b>67</b></td>
-			<td>77</td>
-			<td>87</td>
-			<td>97</td>
-		</tr>
-		<tr>
-			<td>8</td>
-			<td>18</td>
-			<td>28</td>
-			<td>38</td>
-			<td>48</td>
-			<td>58</td>
-			<td>68</td>
-			<td><b>78</b></td>
-			<td>88</td>
-			<td>98</td>
-		</tr>
-		<tr>
-			<td>9</td>
-			<td>19</td>
-			<td>29</td>
-			<td>39</td>
-			<td>49</td>
-			<td>59</td>
-			<td>69</td>
-			<td>79</td>
-			<td><b>89</b></td>
-			<td>99</td>
-		</tr>
-		<tr>
-			<td>10</td>  
-			<td>20</td>
-			<td>30</td>
-			<td>40</td>
-			<td>50</td>
-			<td>60</td>
-			<td>70</td>
-			<td>80</td>
-			<td>90</td>
-			<td><b>100</b></td>
-		</tr>
-	</table>
-	<table>
-		<tr>
-			<td colspan="2">Ячейка1</td>
-		</tr>
-		<tr>
-			<td>Ячейка 3</td>
-			<td rowspan="2">Ячейка 4</td>
-		</tr>
-		<tr>
-			<td>Ячейка 5</td>
-			<td>Ячейка 6</td>
-		</tr>
-	</table>
-
-
+	<div class="question">
+						<p>Вопрос к Вам: возьмете меня на работу?&#9786</p>
+						<span><a href="#" onclick="chFoto('foto1.jpeg')"><input type="button" value="Да, конечно, выходи с понедельника!"/></a></span>
+						<span><a href="#" onclick="chFoto('foto2.jpg')"><input type="button" value="Нет, даже и не мечтай!"/></a></span>
+	</div>
+	<script type="text/javascript">
+		function chFoto(lin)
+		{
+			var img = document.getElementById("img");
+			img.src=lin;
+		}
+	</script>
 </body>
 </html>
