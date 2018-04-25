@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta charset="utf-8"></meta>
+ 	<style type="text/css">
+		#Parent{
+			display: flex;
+		}
+		div.main{
+			margin: 10px auto;
+			width: 70%;
+			border: 3px solid grey;
+		}
+		div.top{
+			padding-top: 10px;
+			background: radial-gradient(lightgreen, limegreen);
+			text-align: center;
+			height: 100%;
+		}
+		div.bigright{
+			background-color: lightyellow; 
+			width: 70%
+		}
+		div.right{
+			background-color: lightyellow; 
+			border-bottom: 3px solid royalblue;
+			margin-left: 10px;
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: normal;
+		}
+		div.bigleft{
+			background: linear-gradient(to right, blue, deepskyblue); 
+			width: 30%;
+			text-align: center;
+			align-items: center;
+			color: white;
+		}
+		div.img{
+			font-family: Arial;
+			padding-top: 20px;
+			color: white
+			font-size: 16px;
+			border-bottom: 3px yellow solid;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		div.question{
+			border: 3px solid black;
+			margin: 10px auto;
+			padding-bottom: 14px;
+			width: 70%;
+			background-color: goldenrod; 
+			text-align: center;
+			font-weight: bold;
+			font-family: Arial;
+			color: white
+			font-size: 16px;
+		}
+		td{
+    		background-color: red
+		}
+		tr{
+
+		}
+		ul{
+			text-align: left;
+		}
+		li{
+			color: white;
+		}
+		#love{
+			text-align: left;
+			margin: 10px;
+			font-size: 14px;
+			border-radius: 10px;
+		}
+		#img{
+			height: 200px;
+			width: 150px;
+			border-radius: 20px;
+			border: 3px solid white;
+		}
+		p.main{
+			font-family: Arial;
+			font-size: 20px;
+			font-weight: bold;
+			color: royalblue;
+		}
+		p.headright{
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		p.headleft{
+			font-family: Arial;
+			font-size: 16px;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		#l1{
+			font-family: Arial;
+			text-align: center;
+			background-color: salmon;
+			border-radius: 10px;
+			padding-left: 10px;
+			width: 100px;
+		}
+		#l2{
+			font-family: Arial;
+			text-align: center;
+			background-color: mediumpurple;
+			border-radius: 10px;
+			padding-left: 10px;
+			width: 150px;
+		}
+		#l3{
+			font-family: Arial;
+			text-align: center;
+			background-color: limegreen;
+			border-radius: 10px;
+			padding-left: 10px;
+			width: 220px;
+		}
+		A {
+			color: yellow;
+		}
+		A: visited {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="top">
+			<p class="main">Curriculum vitae</p>
+		</div>
+		<div>
+			<div id="Parent" style="height: 600px">
+				<div class="bigleft">
+					<div class="img">
+						<img src="foto.jpeg" alt="Фото как на паспорт" id="img";>
+						<p>Сергей</p>
+						<p>Меркулов</p>
+					</div>
+					<div>
+						<p class="headleft">Люблю:</p>
+						<div id="love">
+							<div>
+								<p id="l1">Спорт</p>
+							</div>
+							<div>
+								<p id="l2">ИТ</p>
+							</div>
+							<div>
+								<p id="l3">Работать не 24 часа в сутки, а головой</p>
+							</div>
+						</div>
+					</div>
+					<div>
+						<p class="headleft">Контакты</p>
+						<ul>
+							<li><a href="https://accounts.google.com/">Gmail</a></li>
+							<li><a href="https://www.ukr.net/">UkrNet</a></li>
+							<li><a href="https://www.facebook.com/">Facebook</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="bigright">
+					<div class="right">
+						<p class="headright">Дата рождения:</p>
+						<p>20 февраля 1991 года</p>
+						<p class="headright">Желаемая страна проживания:</p>
+						<p>Исландия</p>
+					</div>
+					<div class="right">
+						<p class="headright">Знания и умения:</p>
+						<p>- Теория тестирования ПО;</p>
+						<p>- SQL;</p>
+						<p>- UNIX;</p>
+						<p>- HTML/CSS;</p>
+						<p>- JIRA;</p>
+						<p>- GIT.</p>
+						</pre>
+					</div>
+					<div class="right">
+						<p class="headright">Обо мне</p>
+						<p>- не курю;</p>
+						<p>- иногда пью;</p>
+						<p>- хочу работать тестировщиком ПО.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="question">
+						<p>Вопрос к Вам: возьмете меня на работу?&#9786</p>
+						<span><a href="#" onclick="chFoto('foto1.jpeg')"><input type="button" value="Да, конечно, выходи с понедельника!"/></a></span>
+						<span><a href="#" onclick="chFoto('foto2.jpg')"><input type="button" value="Нет, даже и не мечтай!"/></a></span>
+	</div>
+	<script type="text/javascript">
+		function chFoto(lin)
+		{
+			var img = document.getElementById("img");
+			img.src=lin;
+		}
+	</script>
+</body>
+</html>
